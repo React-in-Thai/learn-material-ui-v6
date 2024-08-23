@@ -18,6 +18,15 @@ function App() {
         fullWidth
         variant="outlined"
       />
+      {/* 1. Render a password field with:
+        - label: "Password"
+        - id: "password"
+        - type: "password"
+        - name: "password"
+        - placeholder: "Your password"
+        - autoComplete: "current-password"
+        - required
+      */}
       <Button>Hello</Button>
     </>
   );
