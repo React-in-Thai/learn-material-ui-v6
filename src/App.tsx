@@ -7,6 +7,8 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
+// 1. import the Divider component (https://mui.com/material-ui/react-divider/)
+// 2. import the SvgIcon component (https://mui.com/material-ui/icons/#svgicon)
 
 function App() {
   return (
@@ -69,6 +71,14 @@ function App() {
             </Link>
           </span>
         </Typography>
+        {/* 3. Render a Divider with a children text of "or" */}
+        {/* 4. Render a Button for Google login
+              - docs: https://mui.com/material-ui/react-button/#buttons-with-icons-and-label
+              - Google icon: https://www.svgrepo.com/show/303108/google-icon-logo.svg
+        */}
+        {/* 5. Render a Button for Facebook login
+              - Facebook icon: https://www.svgrepo.com/show/448224/facebook.svg
+        */}
       </Stack>
     </Box>
   );
