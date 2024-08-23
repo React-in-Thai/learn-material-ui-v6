@@ -25,6 +25,7 @@ function App() {
     >
       <Stack spacing={2}>
         <CssBaseline /> {/* Reset CSS */}
+        {/* 1. Add a Typography with variant="h1", adjust the font-size as you see fit */}
         <TextField
           label="Email"
           id="email"
