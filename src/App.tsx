@@ -25,6 +25,9 @@ function App() {
     >
       <Stack spacing={2}>
         <CssBaseline /> {/* Reset CSS */}
+        <Typography variant="h1" sx={{ fontSize: "2rem", fontWeight: 500 }}>
+          Sign in
+        </Typography>
         <TextField
           label="Email"
           id="email"
