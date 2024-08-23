@@ -3,6 +3,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
+// 1. Import the Checkbox component with FormControlLabel (https://mui.com/material-ui/react-checkbox/)
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           fullWidth
           variant="outlined"
         />
+        {/* 2. Render the Checkbox and FormControlLabel component  */}
         <Button>Hello</Button>
       </Stack>
     </Box>
