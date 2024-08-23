@@ -3,6 +3,8 @@ import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox";
 
 function App() {
   return (
@@ -41,6 +43,14 @@ function App() {
           required
           fullWidth
           variant="outlined"
+        />
+        <FormControlLabel
+          control={<Checkbox value="remember" color="primary" />}
+          label="Remember me"
+          sx={{
+            marginLeft: "-12px",
+            "& .MuiFormControlLabel-label": { userSelect: "none" },
+          }}
         />
         <Button>Hello</Button>
       </Stack>
