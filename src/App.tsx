@@ -5,6 +5,8 @@ import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
+// 1. Import the Link component (https://mui.com/material-ui/react-link/)
+// 2. Import the Typography component (https://mui.com/material-ui/react-typography/)
 
 function App() {
   return (
@@ -52,7 +54,9 @@ function App() {
             "& .MuiFormControlLabel-label": { userSelect: "none" },
           }}
         />
+        {/* 3. change this's button variant to `contained` and the text to "Log in" */}
         <Button>Hello</Button>
+        {/* 4. Render the Typography and a Link for sign up */}
       </Stack>
     </Box>
   );
