@@ -18,6 +18,17 @@ function App() {
         fullWidth
         variant="outlined"
       />
+      <TextField
+        label="Password"
+        name="password"
+        placeholder="••••••"
+        type="password"
+        id="password"
+        autoComplete="current-password"
+        required
+        fullWidth
+        variant="outlined"
+      />
       <Button>Hello</Button>
     </>
   );
