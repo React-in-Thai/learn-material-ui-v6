@@ -15,6 +15,9 @@ function App() {
   return (
     <AppTheme>
       <Box
+        // 1. change from object to callback to get the theme
+        //    and change the borderRadius value to `theme.shape.borderRadius`
+        // 2. add background color using `theme.palette.background.paper`
         sx={{
           padding: "2rem",
           maxWidth: "400px",
