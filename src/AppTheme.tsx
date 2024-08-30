@@ -64,6 +64,8 @@ const theme = createTheme({
         }),
       },
     },
+    // 1. Customize the MuiTextField componnt to use the same border color as the outlined button.
+    //    You can inspect the TextField component in the browser to use the class name to override the fieldset element.
   },
 });
 
