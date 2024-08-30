@@ -456,6 +456,11 @@
   resolved "https://registry.yarnpkg.com/@eslint/object-schema/-/object-schema-2.1.4.tgz#9e69f8bb4031e11df79e03db09f9dbbae1740843"
   integrity sha512-BsWiH1yFGjXXS2yvrf5LyuoSIIbPrGUWob917o+BTKuZ7qJdxX8aJLRxs1fS9n6r7vESrq1OUqb68dANcFXuQQ==
 
+"@fontsource-variable/inter@5.0.20":
+  version "5.0.20"
+  resolved "https://registry.yarnpkg.com/@fontsource-variable/inter/-/inter-5.0.20.tgz#d061d4484713f6d417def7ec6de7db4b0a58738f"
+  integrity sha512-dhzG4Zls/tIrf8h0FhTNi8jT/uFwNhdTY2vKe6DYqoXDYOfEcTVZDyh1hKml1rlLT44Y7OoKoGz8w7czDW7twQ==
+
 "@humanwhocodes/module-importer@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/module-importer/-/module-importer-1.0.1.tgz#af5b2691a22b44be847b0ca81641c5fb6ad0172c"
