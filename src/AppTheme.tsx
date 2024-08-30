@@ -1,4 +1,5 @@
 import React from "react";
+import Box from "@mui/material/Box";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import "@fontsource-variable/inter";
 
@@ -74,6 +75,34 @@ const theme = createTheme({
             borderColor: theme.palette.grey[400],
           },
         }),
+      },
+    },
+    MuiCheckbox: {
+      defaultProps: {
+        icon: (
+          <Box
+            sx={(theme) => ({
+              borderRadius: "8px",
+              width: "1.5rem",
+              height: "1.5rem",
+              border: "2px solid transparent",
+              boxShadow: `inset 0px 0px 0px 1px ${theme.palette.grey[300]}`,
+              ".MuiCheckbox-root:hover &, .MuiFormControlLabel-root:hover &": {
+                boxShadow: `inset 0px 0px 0px 1px ${theme.palette.grey[400]}`,
+              },
+            })}
+          />
+        ),
+      },
+      styleOverrides: {
+        root: {
+          "&:hover": {
+            backgroundColor: "initial",
+          },
+          ".MuiFormControlLabel-root &": {
+            marginLeft: "-9px",
+          },
+        },
       },
     },
   },
