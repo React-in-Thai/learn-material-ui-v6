@@ -15,15 +15,18 @@ function App() {
   return (
     <AppTheme>
       <Box
-        sx={{
+        sx={(theme) => ({
           padding: "2rem",
           maxWidth: "400px",
           margin: "auto",
           marginTop: "10vh",
           border: "1px solid #eee",
           boxShadow: "0 2px 10px rgba(0, 0, 0, 0.08)",
-          borderRadius: "4px",
-        }}
+          // In `sx` prop, if the value of `borderRadius` is a number, it will be multiplied by the theme's `shape.borderRadius`.
+          // To avoid the calculation, use a string value with CSS calc.
+          borderRadius: `calc(${theme.shape.borderRadius}px * 2)`,
+          backgroundColor: theme.palette.background.paper,
+        })}
       >
         <Stack spacing={2}>
           <CssBaseline /> {/* Reset CSS */}
