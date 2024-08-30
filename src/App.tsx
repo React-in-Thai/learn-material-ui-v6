@@ -9,8 +9,12 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import Divider from "@mui/material/Divider";
 import SvgIcon from "@mui/material/SvgIcon";
+// 1. create a new file "AppTheme.tsx" and export a component that uses the Material UI ThemeProvider
+//    create a theme using `createTheme` and pass it to the `ThemeProvider` component (https://mui.com/material-ui/customization/theming/)
+// 2. import the AppTheme component here
 
 function App() {
+  // 3. wrap the entire component in the AppTheme component
   return (
     <Box
       sx={{
