@@ -4,6 +4,8 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import "@fontsource-variable/inter";
 
 const theme = createTheme({
+  // 1. set colorSchemes.dark to `true` and try to toggle the dark mode with emulate prefers-color-scheme in the browser devtools.
+  //    (https://mui.com/material-ui/customization/dark-mode/#built-in-support)
   palette: {
     primary: {
       main: "#27272a",
