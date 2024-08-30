@@ -11,6 +11,7 @@ const theme = createTheme({
   typography: {
     fontFamily: "'Inter Variable', sans-serif",
   },
+  // 1. adjust the theme border radius to `8px`
 });
 
 export default function AppTheme({ children }: React.PropsWithChildren) {
