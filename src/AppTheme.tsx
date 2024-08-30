@@ -4,6 +4,9 @@ import "@fontsource-variable/inter";
 
 const theme = createTheme({
   palette: {
+    primary: {
+      main: "#27272a",
+    },
     background: {
       default: "#f5f5f5",
     },
