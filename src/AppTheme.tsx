@@ -76,6 +76,7 @@ const theme = createTheme({
         }),
       },
     },
+    // 1. Customize the Checkbox's icon using the `defaultProps` key (https://mui.com/material-ui/customization/theme-components/#theme-default-props)
   },
 });
 
