@@ -4,6 +4,8 @@ import "@fontsource-variable/inter";
 
 const theme = createTheme({
   palette: {
+    // 1. customize the `primary.main` token with '#27272a'
+    //    adjust the `primary.light` and `primary.dark` as you see fit.
     background: {
       default: "#f5f5f5",
     },
