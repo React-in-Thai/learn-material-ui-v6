@@ -33,6 +33,8 @@ const theme = createTheme({
   shape: {
     borderRadius: 8,
   },
+  // Adjust the styles of the components below to look good in dark mode by using
+  // `theme.applyStyles('dark', { ... })` to apply the styles only in dark mode.
   components: {
     MuiButton: {
       styleOverrides: {
