@@ -39,6 +39,7 @@ const theme = createTheme({
                 },
               },
             },
+            // 1. customize the `outlined` variant + `primary` color as you'd like
           ],
         }),
       },
