@@ -4,6 +4,9 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import "@fontsource-variable/inter";
 
 const theme = createTheme({
+  colorSchemes: {
+    dark: true,
+  },
   palette: {
     primary: {
       main: "#27272a",
