@@ -5,26 +5,46 @@ import "@fontsource-variable/inter";
 
 const theme = createTheme({
   colorSchemes: {
-    dark: true,
-  },
-  palette: {
-    primary: {
-      main: "#27272a",
+    light: {
+      palette: {
+        primary: {
+          main: "#27272a",
+        },
+        grey: {
+          "50": "#fafafa",
+          "100": "#f5f5f5",
+          "200": "#e5e5e5",
+          "300": "#d4d4d4",
+          "400": "#a3a3a3",
+          "500": "#737373",
+          "600": "#525252",
+          "700": "#404040",
+          "800": "#262626",
+          "900": "#171717",
+        },
+        background: {
+          default: "#f5f5f5",
+        },
+      },
     },
-    grey: {
-      "50": "#fafafa",
-      "100": "#f5f5f5",
-      "200": "#e5e5e5",
-      "300": "#d4d4d4",
-      "400": "#a3a3a3",
-      "500": "#737373",
-      "600": "#525252",
-      "700": "#404040",
-      "800": "#262626",
-      "900": "#171717",
-    },
-    background: {
-      default: "#f5f5f5",
+    dark: {
+      palette: {
+        grey: {
+          "50": "#fafafa",
+          "100": "#f5f5f5",
+          "200": "#e5e5e5",
+          "300": "#d4d4d4",
+          "400": "#a3a3a3",
+          "500": "#737373",
+          "600": "#525252",
+          "700": "#404040",
+          "800": "#262626",
+          "900": "#171717",
+        },
+        background: {
+          default: "#000",
+        },
+      },
     },
   },
   typography: {
@@ -42,17 +62,24 @@ const theme = createTheme({
             {
               props: { variant: "contained", color: "primary" },
               style: {
+                "--_shadow": "#000",
                 border: `1px solid ${theme.palette.primary.main}`,
-                boxShadow: `inset -0.75px -0.75px 0.75px #000, inset 0.75px 0.75px 0.75px rgba(255, 255, 255, 0.4)`,
+                boxShadow: `inset -0.75px -0.75px 0.75px var(--_shadow), inset 0.75px 0.75px 0.75px rgba(255, 255, 255, 0.4)`,
                 backgroundImage: `linear-gradient(to bottom, ${theme.palette.primary.light}, ${theme.palette.primary.main})`,
                 backgroundColor: theme.palette.primary.light,
                 "&:hover": {
-                  boxShadow: `inset -0.75px -1px 0.75px #000, inset 0.75px 0 0.75px rgba(255, 255, 255, 0.4)`,
+                  boxShadow: `inset -0.75px -1px 0.75px var(--_shadow), inset 0.75px 0 0.75px rgba(255, 255, 255, 0.4)`,
                   backgroundImage: "none",
                 },
                 "&:active": {
                   boxShadow: "none",
                 },
+                ...theme.applyStyles("dark", {
+                  "--_shadow": "#1876c2",
+                  borderColor: "#467297",
+                  backgroundColor: theme.palette.primary.dark,
+                  backgroundImage: `linear-gradient(to bottom, ${theme.palette.primary.main}, ${theme.palette.primary.dark})`,
+                }),
               },
             },
             {
@@ -62,6 +89,12 @@ const theme = createTheme({
                 "&:hover": {
                   borderColor: theme.palette.grey[400],
                 },
+                ...theme.applyStyles("dark", {
+                  borderColor: theme.palette.grey[700],
+                  "&:hover": {
+                    borderColor: theme.palette.grey[600],
+                  },
+                }),
               },
             },
           ],
@@ -77,6 +110,14 @@ const theme = createTheme({
           "& .MuiOutlinedInput-root:not(.Mui-focused):hover fieldset": {
             borderColor: theme.palette.grey[400],
           },
+          ...theme.applyStyles("dark", {
+            "& fieldset": {
+              borderColor: theme.palette.grey[700],
+            },
+            "& .MuiOutlinedInput-root:not(.Mui-focused):hover fieldset": {
+              borderColor: theme.palette.grey[600],
+            },
+          }),
         }),
       },
     },
@@ -93,6 +134,13 @@ const theme = createTheme({
               ".MuiCheckbox-root:hover &, .MuiFormControlLabel-root:hover &": {
                 boxShadow: `inset 0px 0px 0px 1px ${theme.palette.grey[400]}`,
               },
+              ...theme.applyStyles("dark", {
+                boxShadow: `inset 0px 0px 0px 1px ${theme.palette.grey[700]}`,
+                ".MuiCheckbox-root:hover &, .MuiFormControlLabel-root:hover &":
+                  {
+                    boxShadow: `inset 0px 0px 0px 1px ${theme.palette.grey[600]}`,
+                  },
+              }),
             })}
           />
         ),

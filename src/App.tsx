@@ -20,12 +20,16 @@ function App() {
           maxWidth: "400px",
           margin: "auto",
           marginTop: "10vh",
-          border: "1px solid #eee",
+          border: "1px solid",
+          borderColor: theme.palette.grey[300],
           boxShadow: "0 2px 10px rgba(0, 0, 0, 0.08)",
           // In `sx` prop, if the value of `borderRadius` is a number, it will be multiplied by the theme's `shape.borderRadius`.
           // To avoid the calculation, use a string value with CSS calc.
           borderRadius: `calc(${theme.shape.borderRadius}px * 2)`,
           backgroundColor: theme.palette.background.paper,
+          ...theme.applyStyles("dark", {
+            borderColor: theme.palette.grey[800],
+          }),
         })}
       >
         <Stack spacing={2}>
