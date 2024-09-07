@@ -1,3 +1,4 @@
+// 1. import `useColorScheme` hook from Material UI package
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
@@ -11,9 +12,14 @@ import Divider from "@mui/material/Divider";
 import SvgIcon from "@mui/material/SvgIcon";
 import AppTheme from "./AppTheme";
 
+// 2. Create a new component named ColorModeToggle that read `mode` and `setMode` from the `useColorScheme` hook
+//    and render a [Select](https://mui.com/material-ui/react-select/) component with three options: "system", "light", and "dark".
+//    Pass the `mode` and `setMode` to the `value` and `onChange` props of the Select component.
+
 function App() {
   return (
     <AppTheme>
+      {/* 3. render the ColorModeToggle here */}
       <Box
         sx={(theme) => ({
           padding: "2rem",
