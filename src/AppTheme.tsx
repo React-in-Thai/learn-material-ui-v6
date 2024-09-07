@@ -4,6 +4,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import "@fontsource-variable/inter";
 
 const theme = createTheme({
+  // 1. set `cssVariables` with a config to use class color scheme selector.
   colorSchemes: {
     light: {
       palette: {
