@@ -34,6 +34,12 @@ function App() {
           ...theme.applyStyles("dark", {
             borderColor: (theme.vars || theme).palette.grey[800],
           }),
+          [theme.breakpoints.down("sm")]: {
+            // or [theme.breakpoints.down(400)] for custom breakpoint
+            background: "none",
+            border: "none",
+            boxShadow: "none",
+          },
         })}
       >
         <Stack spacing={2}>
