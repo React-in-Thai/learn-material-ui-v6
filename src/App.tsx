@@ -1,6 +1,3 @@
-import { useColorScheme } from "@mui/material/styles";
-import Select from "@mui/material/Select";
-import MenuItem from "@mui/material/MenuItem";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
@@ -13,31 +10,14 @@ import Link from "@mui/material/Link";
 import Divider from "@mui/material/Divider";
 import SvgIcon from "@mui/material/SvgIcon";
 import AppTheme from "./AppTheme";
-
-function ColorModeToggle() {
-  const { mode, setMode } = useColorScheme();
-  if (!mode) {
-    return null;
-  }
-  return (
-    <Select
-      value={mode}
-      onChange={(e) => {
-        setMode(e.target.value as "system" | "light" | "dark");
-      }}
-      sx={{ position: "fixed", top: "1rem", right: "1rem" }}
-    >
-      <MenuItem value="system">System</MenuItem>
-      <MenuItem value="light">Light</MenuItem>
-      <MenuItem value="dark">Dark</MenuItem>
-    </Select>
-  );
-}
+import { ColorSchemeSelectIcon } from "./mui-treasury/color-scheme-select-icon";
 
 function App() {
   return (
     <AppTheme>
-      <ColorModeToggle />
+      <Box sx={{ position: "fixed", top: "1rem", right: "1rem" }}>
+        <ColorSchemeSelectIcon />
+      </Box>
       <Box
         sx={(theme) => ({
           padding: "2rem",
