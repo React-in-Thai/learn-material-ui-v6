@@ -20,6 +20,8 @@ function App() {
       </Box>
       <Box
         sx={(theme) => ({
+          // 1. remove `background`, `border`, and `boxShadow` styles for mobile breakpoint
+          //    https://mui.com/material-ui/customization/breakpoints/
           padding: "2rem",
           maxWidth: "400px",
           margin: "auto",
