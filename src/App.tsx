@@ -14,6 +14,8 @@ import Divider from "@mui/material/Divider";
 import SvgIcon from "@mui/material/SvgIcon";
 import AppTheme from "./AppTheme";
 
+// 1. Replace the ColorModeToggle below with https://mui-treasury.com/?path=/story/color-scheme-select-icon--icon
+//    You might need to install the `@mui/icons-material` package.
 function ColorModeToggle() {
   const { mode, setMode } = useColorScheme();
   if (!mode) {
