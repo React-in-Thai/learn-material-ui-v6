@@ -79,6 +79,8 @@ Browser จะมีการเซ็ต CSS default ที่ไม่เห�
 
 [Lesson guide](https://github.com/React-in-Thai/learn-material-ui-v6/commit/df81c855577e920a4264aa3fb8f9aa08b872c953), [Docs](https://mui.com/material-ui/customization/how-to-customize/#the-sx-prop), [Solution](https://github.com/React-in-Thai/learn-material-ui-v6/commit/5e1cf3df5faad91e64b9e8865945b8adf1b58fc8)
 
+> Tip: why `marginTop` is better than position `fixed` for making the form centered.
+
 ### L7 - Checkbox
 
 **Requirement**: เพิ่ม Remember me checkbox
