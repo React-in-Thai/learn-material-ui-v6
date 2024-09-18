@@ -75,6 +75,8 @@ Browser จะมีการเซ็ต CSS default ที่ไม่เห�
 
 **Requirement**: ใช้ Box และ sx prop จัด layout ให้ได้แบบในรูป
 
+<img width="754" alt="image" src="https://github.com/user-attachments/assets/4c735cb2-8e9b-48b7-8521-967ffe114d39">
+
 [Lesson guide](https://github.com/React-in-Thai/learn-material-ui-v6/commit/df81c855577e920a4264aa3fb8f9aa08b872c953), [Docs](https://mui.com/material-ui/customization/how-to-customize/#the-sx-prop), [Solution](https://github.com/React-in-Thai/learn-material-ui-v6/commit/5e1cf3df5faad91e64b9e8865945b8adf1b58fc8)
 
 ### L7 - Checkbox
