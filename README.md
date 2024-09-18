@@ -95,7 +95,7 @@ Browser จะมีการเซ็ต CSS default ที่ไม่เห�
 
 ต่อมาจะเป็นการนำ icon ทั่วๆไปมาใช้กับ Material UI ใน social login
 
-**Requirement**: สร้าง component GoogleIcon และ FacebookIcon ด้วย svg ที่ให้ และนำไปใช้งานกับ Button เพื่อสร้าง social login buttons
+**Requirement**: สร้าง component [GoogleIcon](https://www.svgrepo.com/show/303108/google-icon-logo.svg) และ [FacebookIcon](https://www.svgrepo.com/show/448224/facebook.svg) ด้วย svg ที่ให้ และนำไปใช้งานกับ Button เพื่อสร้าง social login buttons
 
 [Lesson guide](https://github.com/React-in-Thai/learn-material-ui-v6/commit/bb9764c94a9d7fd1a6804318970e0cb9708d08d7), [Button + icon demo](https://mui.com/material-ui/react-button/#buttons-with-icons-and-label), [SvgIcon docs](https://mui.com/material-ui/icons/#svgicon), [Solution](https://github.com/React-in-Thai/learn-material-ui-v6/commit/c1a15cbc6f165403de4f937b01b407fdf05c48ae)
 
